@@ -1,0 +1,12 @@
+.btnPrincipal{
+  text-decoration: none;
+  background-color: mediumblue;
+  border-radius: 5px;
+  border: 0;
+  height: 25px;
+
+}
+.btnPrincipal:hover{
+  background-color: blue;
+}
+
