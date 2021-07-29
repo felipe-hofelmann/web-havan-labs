@@ -49,14 +49,9 @@ function editar(id){
 
 function deletar(id)
 {
-    produtos.forEach(b =>
-        {
-            if(id === b.id)
-            {
-                produtos.pop(b);
-                carregarTabela();
-            }
-        });
+    produtos.splice(produtos.findIndex(produto => produto.id == id),1);
+    carregarTabela();
+
 }
 
 window.onload = function(){
