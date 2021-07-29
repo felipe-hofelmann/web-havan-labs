@@ -124,14 +124,3 @@ table tbody tr td a:hover{
 .edit:hover{
     background: rgb(158, 142, 0);
 }
-
-.linkedin{
-    align-items: center;
-    width: 35px;
-    height: 35px;
-}
-
-.github{
-    width: 35px;
-    height: 35px;
-}

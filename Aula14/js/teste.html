@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Desafio 2 Curso JS Rocketseat</title>
+    </head>
+    <body>
+        <button class="btn">Adicionar</button>
+
+        <div id="app">
+
+        </div>
+        <ul>
+            
+        </ul>
+        <input type="text" id="nome">
+        <button onclick="adicionar()">Adicionar</button>
+
+        <script>
+            
+            //Primeiro e Segundo exercício 
+            var btnElement = document.querySelector('.btn')
+
+            btnElement.onclick = function(){
+                var redElement = document.createElement('div');
+
+                redElement.style.width = '100px';
+                redElement.style.height = '100px';
+                redElement.style.margin = '10px';
+                redElement.style.backgroundColor = '#f00';
+                redElement.style.display = 'flex';
+                
+
+                var containerElement = document.querySelector('#app');
+
+                containerElement.style.display = 'flex';
+                containerElement.style.flexWrap = 'wrap';
+
+                containerElement.appendChild(redElement);
+
+                redElement.addEventListener('mouseover', function(){
+                    var letters = "0123456789ABCDEF";
+                    var color = "#";
+                    for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return this.style.background = color;
+                });
+
+            }
+
+            //Terceiro e Quarto exercício 
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+            var listaElement = document.querySelector('ul');
+
+            for(nome of nomes){
+                var liElment = document.createElement('li');
+                var textElement = document.createTextNode(nome);
+                liElment.appendChild(textElement);
+                listaElement.appendChild(liElment);
+            }
+
+            var elementoLista = document.querySelector("ul");
+            var inputNewName = document.getElementById("nome");
+
+            for (name of names) {
+                adicionaItem(name);
+            }
+
+            function adicionaItem(name) {
+                console.log("TCL: adicionaItem -> name", name);
+
+                var elementoFilho = document.createElement("li");
+                var textoDoFilho = document.createTextNode(name);
+
+                elementoFilho.appendChild(textoDoFilho);
+                elementoLista.appendChild(elementoFilho);
+            }
+
+            function adicionar() {
+                adicionaItem(inputNewName.value);
+
+                inputNewName.value = "";
+            }
+        </script>
+    </body>
+        
+</html>

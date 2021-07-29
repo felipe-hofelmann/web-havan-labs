@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            width: 50%;
+            margin: auto;
+        }
+        .edit{
+        background: rgba(238, 234, 2, 66);
+        border-radius: 5px;
+        border: 1px solid rgb(158, 142, 0);
+        width: 70px;
+        height: 25px;
+        text-transform: uppercase;
+        }
+
+        .delit{
+            background: rgb(247, 0, 0);
+            border-radius: 5px;
+            border: 1px solid rgb(156, 0, 0);
+            width: 70px;
+            height: 25px;
+            text-transform: uppercase;
+        }
+
+        .delit:hover{
+            background: rgb(156, 0, 0);
+        }
+
+        .edit:hover{
+            background: rgb(158, 142, 0);
+        }
+    </style>
+    <h1>Produtos</h1>
+    <label for="nome">Nome:</label><input type="text" name="nome" id="nome"><br><br>
+    <label for="descricao">Descrição:</label><input type="text" name="descricao" id="descricao"><br><br>
+    <button onclick="salvar()">Salvar</button><br><br>
+
+    <div>
+        <table id="tbprodutos">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
