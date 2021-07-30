@@ -92,6 +92,7 @@ window.onload = function(){
 
 };
 
+//Muda o id na pagina
 function mudaId(id){
     var muda = document.getElementById("id");
     muda.innerHTML = id;

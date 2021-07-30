@@ -1,0 +1,72 @@
+header{
+    background-image: url(https://lh3.googleusercontent.com/proxy/VXWS12dYhZJ5tjl4Hy-Mu8Qh165cCVTNEHqTZAr46mhcCeW_IpQSAnxOu9VTUwA77IwTRP8JEGS3WEhblo6uwWzpjS38MZfs7QTn7XvEIkhHCHwSGY0Z_DGkzH97YEb7oZVcO2bTn58hTXuEDA0HoV8D8v1s_9OO8unDgVeufNQldHU1CKxQNFe4Dvr8oKs);
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 30px 10px;
+}
+
+#logo{
+    margin-left: 5%;
+    margin-bottom: 50px;
+    height: 50px;
+    width: 10%;
+}
+
+#logo-beer{
+    width: 100px;
+    height: 100px;
+}
+#menu-principal{
+    height: 50px;
+    width: 50%;
+
+    text-align: left;
+    margin-right: 20%;
+}
+
+#menu-principal ul{
+    list-style: none;
+    margin-top: 15px;
+}
+
+#menu-principal ul li{
+    display: inline-block;
+    background: #ffd000;
+    justify-content: center;
+    border: solid 2px black;
+    border-radius: 10px;
+    
+}
+#menu-principal ul li:hover{
+    display: inline-block;
+    background: #fff;
+}
+
+#menu-principal ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: black ;
+}
+
+#menu-principal ul li a:hover{
+    color: #ffd000;
+}
+
+#menu-usuario{
+    height: 50px;
+    width: 5%;
+    margin-right: 5%;
+
+}
+
+#menu-usuario img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: #000266 solid 2px;
+}
