@@ -1,5 +1,5 @@
 header{
-    background-image: url(https://lh3.googleusercontent.com/proxy/VXWS12dYhZJ5tjl4Hy-Mu8Qh165cCVTNEHqTZAr46mhcCeW_IpQSAnxOu9VTUwA77IwTRP8JEGS3WEhblo6uwWzpjS38MZfs7QTn7XvEIkhHCHwSGY0Z_DGkzH97YEb7oZVcO2bTn58hTXuEDA0HoV8D8v1s_9OO8unDgVeufNQldHU1CKxQNFe4Dvr8oKs);
+    background-image: url(fundo-header.jpg);
     height: 140px;
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,7 @@ header{
     background: #fff;
 }
 
-#menu-principal ul li a{
+#menu-principal ul li b{
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -53,8 +53,9 @@ header{
     color: black ;
 }
 
-#menu-principal ul li a:hover{
+#menu-principal ul li b:hover{
     color: #ffd000;
+    cursor: pointer;
 }
 
 #menu-usuario{
