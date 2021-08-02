@@ -4,6 +4,7 @@ function carregaFormulario(){
         document.getElementsByClassName("conteudo")[0].innerHTML = request.responseText;
         if (JSON.parse(localStorage.getItem("idEditar")) != null) {
             mudaId(JSON.parse(localStorage.getItem("idEditar")));
+            editar(JSON.parse(localStorage.getItem("idEditar")));
         }else{
             if(JSON.parse(localStorage.getItem("salvaId")) != null){
                 mudaId(JSON.parse(localStorage.getItem("salvaId")));
@@ -117,6 +118,7 @@ function mandaEditar(id){
     let idEditar = JSON.parse(localStorage.getItem("idEditar"));
     localStorage.setItem("idEditar",JSON.stringify(id));
     carregaFormulario();
+    
 }
 function editar(id){
     let cervejasJson =  localStorage.getItem("cervejas");
