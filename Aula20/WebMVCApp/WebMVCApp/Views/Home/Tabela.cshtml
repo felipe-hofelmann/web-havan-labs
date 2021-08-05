@@ -1,0 +1,27 @@
+﻿@model List<WebMVCApp.Models.Moto>
+<table class="table">
+    <thead >
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Marca</th>
+            <th>Cilindrada</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Nome</td>
+                <td>@item.Marca</td>
+                <td>@item.Cilindrada</td>
+                <td>
+                    <a href="/Home/Editar/@item.Id" class="btn btn-warning">Editar</a>
+                    <a href="/Home/Deletar/@item.Id" class="btn btn-danger">Deletar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

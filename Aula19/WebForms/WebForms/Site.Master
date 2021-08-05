@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebForms.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Content/css/footer.css" rel="stylesheet" />
+    <link href="Content/css/header.css" rel="stylesheet" />
+    <link href="Content/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="Default.aspx">
+                <img id="logo-beer" src="Content/img/icon-beer.png" />
+            </a>
+        </div>
+        <nav id="menu-principal">
+            <ul>
+                <li>
+                    <a href="Formulario.aspx"> <b>Cadastro</b> </a>
+                </li>
+                <li>
+                    <a href="Listagem.aspx"> <b>Lista</b> </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="menu-usuario">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEH79y7hpOueQ/profile-displayphoto-shrink_200_200/0/1626114173675?e=1632960000&v=beta&t=lJEDSP7yAyBBBNAoON40pAXCYmsALrR4_Bvn6W4tUqg" alt="Imagem Rafael">
+        </div>
+    </header>
+     <main>
+            <div id="sub-menu">
+                <ul>
+                    <li onclick="home()">
+                        <a href="Default.aspx"> <b><i class="fa fa-fw fa-home"></i>Home</b> </a>
+                    </li>
+                    <li>
+                         <a href="Formulario.aspx"> <b>Cadastro</b> </a>
+                    </li>
+                    <li>
+                        <a href="Listagem.aspx"> <b>Lista</b> </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="conteudo">
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </main>
+     <footer class="footer-distributed">
+            <div class="footer-right">
+
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+
+                    
+                    <a class="link-1" href="#logo">Menu</a>
+                
+                <a href="modulo.html">Home</a>
+
+                <a href="#">Cadastro de Cervejas</a>
+
+
+                <a href="#">Lista de Cervejas</a>
+
+				</p>
+
+				<p>Felipe Höfelmann &copy; 2021</p>
+			</div>
+        </footer>
+</body>
+</html>

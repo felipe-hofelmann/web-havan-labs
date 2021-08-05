@@ -1,0 +1,185 @@
+﻿body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2020/10/cervejas-gerais.jpg);
+}
+a 
+{
+    text-decoration:none;
+    color:black;
+}
+main {
+    width: 80%;
+    background: #fff;
+    height: 500px;
+    margin: 40px auto 160px;
+    box-shadow: 0 0 5px 0;
+    display: flex;
+    border-radius: 10px;
+}
+
+.submenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.submenu b {
+    color: #fff;
+}
+
+#sub-menu b {
+    cursor: pointer;
+}
+
+.conteudo {
+    overflow-y: scroll;
+    width: 100%;
+    height: 500px;
+    margin: 0px auto 160px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.conteudo h1 {
+    margin: 0;
+}
+
+.logo-conteudo {
+    width: 300px;
+    height: 300px;
+    padding-top: 10px;
+}
+
+#sub-menu {
+    background: #ffd000;
+    float: left;
+    height: 500px;
+    width: 150px;
+    display: block;
+    border-right: 2px solid black;
+    border-radius: 5px;
+}
+
+#sub-menu ul {
+    padding: 25px 0 0 0;
+}
+
+#sub-menu li {
+    list-style: none;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+#sub-menu li a {
+    text-decoration: none;
+}
+
+.novo {
+    height: 35px;
+    width: 60px;
+    border: 2px solid rgb(5, 168, 32);
+    border-radius: 5px;
+    background: rgb(38, 204, 66);
+}
+
+    .novo:hover {
+        background: rgb(5, 168, 32);
+    }
+
+    .novo a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+hr {
+    width: 100%;
+    height: 2px;
+    background: black;
+    border: none;
+}
+
+table {
+    margin: 20px auto 10px;
+    width: 60%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+    table thead {
+        background: rgb(122, 120, 120);
+        color: #fff;
+        height: 30px;
+    }
+
+        table thead tr th {
+            border: 1px solid black;
+        }
+
+    table tbody tr {
+        height: 40px;
+    }
+
+        table tbody tr td {
+            border: black solid 1px;
+            text-align: center;
+        }
+
+            table tbody tr td a {
+                text-align: center;
+                text-decoration: none;
+            }
+
+.edit-delit {
+    width: 200px;
+}
+
+#form {
+    padding-top: 20px;
+    width: 29%;
+    margin: auto;
+    text-align: end;
+}
+
+.salvar {
+    height: 25px;
+    width: 65px;
+    border: 2px solid #d8b000;
+    border-radius: 5px;
+    background: #ffd000;
+}
+
+    .salvar:hover {
+        background: #fff;
+        color: black;
+    }
+
+.edit {
+    background: #ffd000;
+    border-radius: 5px;
+    border: 1px solid rgb(158, 142, 0);
+    width: 70px;
+    height: 25px;
+    text-transform: uppercase;
+}
+
+.delit {
+    background: rgb(247, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(156, 0, 0);
+    width: 70px;
+    height: 25px;
+    text-transform: uppercase;
+}
+
+    .delit:hover {
+        background: rgb(156, 0, 0);
+    }
+
+.edit:hover {
+    background: rgb(158, 142, 0);
+}
