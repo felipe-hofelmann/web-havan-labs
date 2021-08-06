@@ -23,7 +23,7 @@ namespace WebMVCApp.Controllers
 
         public ActionResult Tabela() 
         {
-            return View(motos.Listar());
+            return View(motos.Read());
         }
 
         [HttpPost]
@@ -42,7 +42,8 @@ namespace WebMVCApp.Controllers
         [HttpGet]
         public ActionResult Editar(int id)
         {
-            return View();
+            Moto model = motos.Read(id);
+            return View(model);
         }
 
         [HttpPost]

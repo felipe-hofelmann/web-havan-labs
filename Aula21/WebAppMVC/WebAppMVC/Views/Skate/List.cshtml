@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebAppMVC.Models.Skate>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cor)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Marca)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cor)
+        </td>
+        <td>
+            <a href="/Skate/Edit/@item.Id" class="btn btn-warning">Editar</a>
+            <a href="/Skate/Delete/@item.Id" class="btn btn-danger">Deletar</a>
+            <a href="/Skate/Details/@item.Id" class="btn btn-primary">Detales</a>
+        </td>
+    </tr>
+}
+
+</table>

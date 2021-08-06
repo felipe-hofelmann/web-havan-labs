@@ -15,17 +15,18 @@ namespace WebMVCApp.Models.Repository
             listaMotos.Add(model);
             id++;
         }
-        public List<Moto> Listar() 
+        public List<Moto> Read() 
         {
             return listaMotos;
         }
-        public int MudaID() 
+
+        public Moto Read(int id) 
         {
-            return id;
+            return listaMotos.Find(m=>m.Id == id);
         }
         public void Deletar(int id) 
         {
-            listaMotos.Remove(listaMotos.Find(m => m.Id == id));
+            listaMotos.Remove(Read(id));
         }
 
         public void Editar(Moto model)
